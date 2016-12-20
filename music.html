@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Dona Maria Jose:   -->
+<html lang="en">
+  <head>
+    <style>
+        body {
+        background-color: #d0e4fe;
+        padding-left: 2cm;
+        padding-top: 1cm;
+        padding-right: 2cm;
+        }
+        #artist {
+          width:1050px;
+          text-align: justify;
+          overflow-x: auto;
+          height: 500px;
+        }
+        #similar_artists {
+          width:50%;
+          float:left;
+        }
+        #top_albums{
+          width:50%;
+          float:right;
+        }
+    </style>
+    <title>A Music Web Application</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="music.js"></script>
+    
+  </head>
+  <body onload="initialize();">
+
+    <form>
+       <label>Artist name: <input type="text" id="form-input"/></label>
+       <input type="button" onclick="sendRequest(),top_albums_function(),similar_artists_function();" value="Display Info"/>
+    </form>
+    <p>
+      <div id="name" text-align="center"></div>
+    	<div id = "artist">&nbsp;</div>
+      <br>
+      <div id = "top_albums"> </div>
+    	<br>
+      <div id = "similar_artist"></div>
+    </p>
+  </body>
+</html>
